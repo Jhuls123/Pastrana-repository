@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Eagle+Lake&family=Epilogue:wght@500;600&family=Inter:wght@100;200;300;400;600;700&family=Neucha&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+body {
+	height: 100vh;
+    
+}
+.wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	background-image: url(./image/vlada-karpovich.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: cover;
+}
+.inner-wrapper {
+	margin: auto;
+	width: 800px;
+	height: auto;
+	display: flex;
+	background-color: white;
+	opacity: 0.8;
+	border-radius: 5px;
+}
+
+.form-wrapper {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	height: auto;
+}
+
+.return-wrapper {
+	display: flex;
+	align-items: center;
+	color: #333;
+	padding: 0.5em;
+}
+.return-wrapper a,
+i {
+	margin-left: 0.3rem;
+	color: #333;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+.return-wrapper:hover a,
+.return-wrapper:hover i {
+	color: #1877f2;
+}
+.img-wrapper {
+	flex: 1;
+	background-color: green;
+}
+.img-input-wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 2em;
+	margin-top: 1rem;
+}
+.icon-wrapper {
+	margin: auto;
+	margin-bottom: 2rem;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 3px solid silver;
+}
+.icon-wrapper i {
+	font-size: 50px;
+}
+.img-input-wrapper h1 {
+	margin: auto;
+	margin-bottom: 1.5rem;
+}
+.input-box {
+	margin: auto;
+	margin-bottom: 1rem;
+	height: auto;
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.input-box input {
+	padding: 0.3em;
+	border: none;
+	outline: none;
+	font-size: 15px;
+	border-bottom: 2px solid silver;
+    color: #000;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+	transform: translateY(-20px);
+	font-size: 10px;
+	color: #333;
+}
+.input-box label {
+	position: absolute;
+	top: 6px;
+	left: 9px;
+	color: grey;
+	pointer-events: none;
+	transition: transform 200ms ease;
+}
+.underlined {
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	width: 100%;
+}
+.underlined::before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #4158d0;
+	transform: scaleX(0);
+	transition: transform 200ms ease;
+}
+.input-box input:focus ~ .underlined::before,
+.input-box input:valid ~ .underlined::before {
+	transform: scaleX(1);
+}
+.select-box {
+	margin-bottom: 1rem;
+	margin-left: 0.5rem;
+	height: 30px;
+	display: flex;
+	align-items: center;
+}
+.info-box {
+	padding: 0.5em;
+}
+.info-box h2 {
+	margin-bottom: 1rem;
+}
+.input-box-button {
+	background-color: #0099ff;
+	padding: 1em;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	color: #eaeaea;
+	text-transform: uppercase;
+	font-size: 10px;
+	transition: all 0.2s ease;
+}
+.input-box-button:hover {
+	opacity: 0.8;
+}
+.input-box-button:focus {
+	transform: scale(0.99);
+}
+/*================== RIGHT SIDE WRAPPER ========================*/
+.info-wrapper {
+	flex: 1;
+}
+
+.info-wrapper h1 {
+	margin-top: 5.5rem;
+	margin-bottom: 3.3rem;
+}
